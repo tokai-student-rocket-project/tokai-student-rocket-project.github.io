@@ -8,8 +8,8 @@ import Layout from '../layouts/Layout.astro';
             <header class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item">
-                            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                        <a class="navbar-item" href="/">
+                            <img class="brand-image" alt="brand" src="/brand.png">
                         </a>
                         <span class="navbar-burger" data-target="navbarMenuHeroC">
                             <span></span>
@@ -69,3 +69,11 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </section>
 </Layout>
+
+<style>
+    .brand-image {
+        max-height: none;
+        width: 230px;
+        height: 40px;
+    }
+</style>
