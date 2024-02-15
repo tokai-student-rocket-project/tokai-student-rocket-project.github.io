@@ -1,0 +1,162 @@
+---
+<<<<<<< HEAD
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <p class="instructions">
+      To get started, open the directory <code>src/pages</code> in your project.<br
+      />
+      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+    </p>
+    <ul class="link-card-grid">
+      <Card
+        href="https://docs.astro.build/"
+        title="Documentation"
+        body="Learn how Astro works and explore the official API docs."
+      />
+      <Card
+        href="https://astro.build/integrations/"
+        title="Integrations"
+        body="Supercharge your project with new frameworks and libraries."
+      />
+      <Card
+        href="https://astro.build/themes/"
+        title="Themes"
+        body="Explore a galaxy of community-built starter themes."
+      />
+      <Card
+        href="https://astro.build/chat/"
+        title="Community"
+        body="Come say hi to our amazing Discord community. ❤️"
+      />
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
+=======
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="東海大学学生ロケットプロジェクト - Tokai Student Rocket Project">
+    <section class="hero is-success is-fullheight">
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="/">
+                            <img class="brand-image" alt="brand" src="/brand.png">
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroC">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item is-active">
+                                Home
+                            </a>
+                            <a class="navbar-item">
+                                Examples
+                            </a>
+                            <a class="navbar-item">
+                                Documentation
+                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-success is-inverted">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Download</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title">
+                    Title
+                </p>
+                <p class="subtitle">
+                    Subtitle
+                </p>
+            </div>
+        </div>
+
+        <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                    <ul>
+                        <li class="is-active"><a>Overview</a></li>
+                        <li><a>Modifiers</a></li>
+                        <li><a>Grid</a></li>
+                        <li><a>Elements</a></li>
+                        <li><a>Components</a></li>
+                        <li><a>Layout</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .brand-image {
+        max-height: none;
+        width: 230px;
+        height: 40px;
+    }
+>>>>>>> origin/main
+</style>
