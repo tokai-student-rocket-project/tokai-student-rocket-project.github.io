@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 import "bootstrap/dist/css/bootstrap.min.css";
 import bootstrap from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
 import Navbar from "../components/Navbar.astro";
@@ -24,4 +25,28 @@ const { title } = Astro.props;
     <Navbar />
     <slot />
   </body>
+=======
+interface Props {
+    title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="TSRPは手作りで低価格なロケット開発の場を学生に提供することで、学生が机上の勉学では学べない、宇宙理工学の知識・技術を修得させ、将来の宇宙技術者を養成することを目的として1995年に設立されました。ロケットの設計・制作、搭載計器の動作試験、実験から得られたデータ解析など多岐に渡るロケットミッションの活動を通じて、技術面の向上だけではなく、マネジメント力、メンバーとの協調性、コミュニケーション能力など、学生の社会性の育成も目的としています。"/>
+    <meta name="keywords" content="TSRP,SRP,ロケットプロジェクト,宇宙,学生,ロケット,東海,打ち上げ,ハイブリット,宇宙開発,能代ロケット">
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <meta name="generator" content={Astro.generator}/>
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <slot/>
+</body>
+>>>>>>> origin/main
 </html>
