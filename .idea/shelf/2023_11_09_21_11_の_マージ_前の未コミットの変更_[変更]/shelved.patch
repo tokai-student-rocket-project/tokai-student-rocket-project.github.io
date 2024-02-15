@@ -1,0 +1,84 @@
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n  \"name\": \"tokai-student-rocket-project.github.io\",\n  \"type\": \"module\",\n  \"version\": \"0.0.1\",\n  \"scripts\": {\n    \"dev\": \"astro dev\",\n    \"start\": \"astro dev\",\n    \"build\": \"astro build\",\n    \"preview\": \"astro preview\",\n    \"astro\": \"astro\"\n  },\n  \"dependencies\": {\n    \"astro\": \"^2.7.2\"\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision 0175832e3ff7c256094570aa632402de32625fef)
++++ b/package.json	(date 1699531894838)
+@@ -10,6 +10,6 @@
+     "astro": "astro"
+   },
+   "dependencies": {
+-    "astro": "^2.7.2"
++    "astro": "^3.4.4"
+   }
+ }
+Index: src/pages/about.astro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>---\nimport Layout from \"../layouts/Layout.astro\";\nimport Navbar from \"../layouts/Navbar.astro\";\n// import Hero from \"../layouts/Hero.astro\";\nimport MainActivity from \"../layouts/MainActivity.astro\";\nimport SAC from \"../layouts/SAC.astro\"\nimport ContastUs from \"../layouts/ContastUs.astro\";\n---\n\n<Layout title=\"Tokai Student Rocket Project\">\n    <Navbar />\n    <!-- <Hero /> -->\n    <MainActivity />\n    <SAC />\n    <ContastUs />\n  </Layout>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/pages/about.astro b/src/pages/about.astro
+--- a/src/pages/about.astro	(revision 0175832e3ff7c256094570aa632402de32625fef)
++++ b/src/pages/about.astro	(date 1699531894838)
+@@ -3,14 +3,14 @@
+ import Navbar from "../layouts/Navbar.astro";
+ // import Hero from "../layouts/Hero.astro";
+ import MainActivity from "../layouts/MainActivity.astro";
+-import SAC from "../layouts/SAC.astro"
++import SAC from "../layouts/SAC.astro";
+ import ContastUs from "../layouts/ContastUs.astro";
+ ---
+ 
+ <Layout title="Tokai Student Rocket Project">
+-    <Navbar />
+-    <!-- <Hero /> -->
+-    <MainActivity />
+-    <SAC />
+-    <ContastUs />
+-  </Layout>
+\ No newline at end of file
++  <Navbar />
++  <!-- <Hero /> -->
++  <MainActivity />
++  <SAC />
++  <ContastUs />
++</Layout>
+Index: src/layouts/Navbar.astro
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>---\nimport logo from \"./images/logo.png\";\nimport favicon from \"./images/favicon.png\";\n---\n\n<nav class=\"navbar is-fixed-top\" role=\"navigation\" aria-label=\"main navigation\">\n  <div class=\"navbar-brand\">\n    <a class=\"navbar-item\" style={{ width: \"231px\" }} href=\"/\">\n      <img\n        src={logo}\n        style={{\n          height: \"36px !important\",\n          maxHeight: \"56px !important\",\n        }}\n      />\n    </a>\n\n    <a\n      role=\"button\"\n      class=\"navbar-burger\"\n      aria-label=\"menu\"\n      aria-expanded=\"false\"\n      data-target=\"navbarMenuData\"\n    >\n      <span aria-hidden=\"true\"></span>\n      <span aria-hidden=\"true\"></span>\n      <span aria-hidden=\"true\"></span>\n    </a>\n  </div>\n\n  <div id=\"navbarMenuData\" class=\"navbar-menu\">\n    <div class=\"navbar-start\">\n      <a class=\"navbar-item\" href=\"/\">Home</a>\n      <a class=\"navbar-item\" href=\"/about/\">About</a>\n      <a class=\"navbar-item\">Our Rockets</a>\n      <a class=\"navbar-item\" href=\"/blog/\">Blog</a>\n    </div>\n\n    <div class=\"navbar-end\">\n      <div class=\"navbar-item\">\n        <a\n          class=\"button is-link is-outlined\"\n          href=\"http://deka.challe.u-tokai.ac.jp/srp/index.html\"\n        >\n          <span class=\"icon\">\n            <figure class=\"image image is-16x16\">\n              <img src={favicon} />\n            </figure>\n          </span>\n          <span>Legacy</span></a\n        >\n      </div>\n    </div>\n  </div>\n</nav>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/layouts/Navbar.astro b/src/layouts/Navbar.astro
+--- a/src/layouts/Navbar.astro	(revision 0175832e3ff7c256094570aa632402de32625fef)
++++ b/src/layouts/Navbar.astro	(date 1699531894838)
+@@ -31,8 +31,22 @@
+   <div id="navbarMenuData" class="navbar-menu">
+     <div class="navbar-start">
+       <a class="navbar-item" href="/">Home</a>
++
+       <a class="navbar-item" href="/about/">About</a>
+       <a class="navbar-item">Our Rockets</a>
++
++      <div class="navbar-item has-dropdown is-hoverable">
++        <a class="navbar-link"> More</a>
++
++        <div class="navbar-dropdown">
++          <a class="navbar-item"> About</a>
++          <a class="navbar-item"> Jobs</a>
++          <a class="navbar-item"> Contact</a>
++          <hr class="navbar-divider" />
++          <a class="navbar-item"> Report an issue</a>
++        </div>
++      </div>
++
+       <a class="navbar-item" href="/blog/">Blog</a>
+     </div>
+ 
