@@ -1,7 +1,0 @@
-{
-<<<<<<< HEAD
-  "extends": "astro/tsconfigs/strict"
-=======
-  "extends": "astro/tsconfigs/base"
->>>>>>> origin/main
-}
