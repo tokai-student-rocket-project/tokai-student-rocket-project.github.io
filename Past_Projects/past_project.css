@@ -1,9 +1,10 @@
 ﻿/*- Past Project -*/
 .pastmenu_pic{
-  width: 296px;
-  height:auto;
+  /* width: 296px; */
+  width: 95%;
+  height: 500px;
   border: 0px;
-  margin: 0px;
+  margin: 10px;
 }
 .PastRocket{
   margin-bottom: 30px;
@@ -32,16 +33,31 @@
   background: linear-gradient(left,#272727, white);
 }
 
-
 .pastrocket_pic{
   float: left;
   margin-right: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
+  margin-left: 10px;
+  height: 360px;
 }
+
 .pastrocket_pic:hover {
-    transform: scale(0.9);
+    transform: scale(0.97);
     transition-duration: 0.5s;
+}
+
+.pastnumber{
+  margin: 0;
+  margin-left: 10px;
+  font-size: 60px;
+}
+
+.pastmenutitle{
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  margin-top: 0px;
 }
 
 table {
