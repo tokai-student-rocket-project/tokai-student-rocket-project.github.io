@@ -38,6 +38,9 @@ h2{
   border-width: 1px;
   width: 50%;
 }
+a{
+  text-decoration: none;
+}
 figcaption{
   float: center;
   text-align: center;
@@ -105,17 +108,17 @@ figcaption{
 }
 .menu_now{
   text-decoration: underline;
+  font-weight: bold;
 }
 .menu_link{
   text-decoration: none;
   color: black;
+  font-weight: bold;
 }
 .menu_link:hover {
     border-bottom: 1px solid;
-    background: #a9a9a9;
-}
-.menu_link:active{
-    color: #0000ff;
+    color:gray;
+
 }
 
 dl{
@@ -156,13 +159,28 @@ dd{
     margin: 0px 0px 30px;
 }
 .HP_link:hover {
-    border-bottom: 1px solid;
-    background: #a9a9a9;
-    text-decoration: none;
+    background: #e4e1e1;
     color: black;
 }
 .HP_link:active{
     color: #0000ff;
+}
+.list_link{
+  list-style: none;
+}
+.button_animate:link{
+  color: #004ea2;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  max-width: 200px;
+  border: 2px solid #004ea2;
+  font-weight: bold;
+}
+.button_animate:hover{
+  color: #fff;
+  background: #004ea2;
 }
 
 /*- Technology -*/
