@@ -118,7 +118,6 @@ figcaption{
 .menu_link:hover {
     border-bottom: 1px solid;
     color:gray;
-
 }
 
 dl{
@@ -222,38 +221,24 @@ dd{
 
 /*Links*/
 .links {
-    position: relative;
-    padding: 0.1em 0.3em;
-    display: inline-block;
-    transition: .3s;
-    color: #000066;
-    text-decoration: none;
+  color: black;
+  font-weight:normal;
 }
 
-    .links::before,
-    .links::after {
-        position: absolute;
-        content: '';
-        width: 0;
-        height: 1px;
-        background-color: #0000FF;
-        transition: .3s;
-    }
+.links:hover{
+  /* color: #004DFF; */
+  border-bottom: 1px solid;
+  color:gray;
+}
+li{
+  list-style: none;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+ul{
+  padding-left: 0%;
+}
 
-    .links::before {
-        top: 0;
-        left: 0;
-    }
-
-    .links::after {
-        bottom: 0;
-        right: 0;
-    }
-
-    .links:hover::before,
-    .links:hover::after {
-        width: 100%;
-    }
 
 
 
